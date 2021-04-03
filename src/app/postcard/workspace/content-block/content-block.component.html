@@ -1,0 +1,19 @@
+<li
+  class="workspace-item"
+  [class.active]="select"
+  appEdit
+  title="Двойной щелчок мыши для фокуса"
+>
+  <div
+    class="workspace-item__content"
+    [ngStyle]="block.styles"
+    contenteditable
+    (click)="$event.stopPropagation()"
+    (blur)="blurHandler()"
+    #blockRef
+  >
+    {{ block.text }}
+  </div>
+
+  <div class="overlay" (dblclick)="dblClickHandler()" *ngIf="!select"></div>
+</li>

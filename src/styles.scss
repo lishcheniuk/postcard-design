@@ -1,0 +1,21 @@
+//@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  font-size: 14px;
+  background-color: burlywood;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.ml-1 {
+  margin-left: 10px;
+}
